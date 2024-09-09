@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-Red text-white font-poppins bg-mobile md:bg-desktop bg-opacity-100 bg-contain"
+  >
+    <main
+      class="container mx-auto flex flex-col gap-4 justify-center text-center h-screen w-[90%] md:flex-row md:items-center md:justify-between md:w-[65%]"
+    >
+      <section
+        id="intro"
+        class="flex flex-col gap-8 my-8 md:text-left md:max-w-[50%] md:my-0"
+      >
+        <p class="font-bold text-3xl md:text-5xl md:font-semibold">
+          Learn to code by watching others
+        </p>
+
+        <p class="font-medium">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+
+      <section class="details flex flex-col gap-6">
+        <button
+          class="bg-Blue py-4 px-8 rounded-lg shadow-md shadow-DarkBlue hover:bg-opacity-80"
+        >
+          <span class="font-bold">Try it free 7 days</span> then $20/mo.
+          thereafter
+        </button>
+        <div>
+          <form
+            action=""
+            id="form"
+            class="form bg-white rounded-xl flex flex-col p-4 gap-4 shadow-md shadow-DarkBlue"
+          >
+            <div class="relative">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                class="bg-transparent outline-none text-DarkBlue w-full border-[1px] rounded border-gray-400 placeholder:text-DarkBlue p-4"
+                placeholder="First Name"
+              />
+              <img src="images/icon-error.svg" alt="error" class="error-img first absolute top-4 right-5 hidden" />
+              <div class="nme-err text-Red text-right"></div>
+            </div>
+            <div class="relative">
+              <input
+                type="text"
+                name="last"
+                id="last"
+                class="bg-transparent outline-none text-DarkBlue w-full border-[1px] rounded border-gray-400 placeholder:text-DarkBlue p-4"
+                placeholder="Last Name"
+              />
+              <img src="images/icon-error.svg" alt="error" class="error-img scnd absolute top-4 right-5 hidden" />
+              <div class="lstnme-err text-Red text-right"></div>
+            </div>
+            <div class="relative">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="bg-transparent outline-none text-DarkBlue w-full border-[1px] rounded border-gray-400 placeholder:text-DarkBlue p-4"
+                placeholder="Email Address"
+              /><img
+                src="images/icon-error.svg"
+                alt="error"
+                class="error-img thrd absolute top-4 right-5 hidden"
+              />
+              <div class="mail-err text-Red text-right"></div>
+            </div>
+            <div class="relative">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="bg-transparent outline-none text-DarkBlue w-full border-[1px] rounded border-gray-400 placeholder:text-DarkBlue p-4"
+                placeholder="Password"
+              />
+              <img src="images/icon-error.svg" alt="error" class="error-img fourth absolute top-4 right-5 hidden" />
+              <div class="pwrd-err text-Red text-right"></div>
+            </div>
+            <button
+              type="submit"
+              id="form-btn"
+              class="bg-Green p-4 rounded shadow-md shadow-GrayishBlue hover:bg-opacity-80"
+            >
+              CLAIM YOUR FREE TRIAL
+            </button>
+            <p class="text-GrayishBlue">
+              By clicking the button, you are agreeing to our
+              <span class="text-Red font-semibold text-xs"
+                >Terms and Services</span
+              >
+            </p>
+          </form>
+        </div>
+
+        <footer>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+          </p>
+        </footer>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
