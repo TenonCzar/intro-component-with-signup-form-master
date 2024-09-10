@@ -17,11 +17,10 @@ module.exports = {
         GrayishBlue: "hsl(246, 25%, 77%)",
       },
 
-      backgroundColor: {
-        mobile: './images/bg-intro-mobile.png',
-        desktop: './images/bg-intro-desktop.png',
-      }
-
+      backgroundImage: {
+        mobile: "url('./images/bg-intro-mobile.png')",
+        desktop: "url('./images/bg-intro-desktop.png')",
+      },
     },
   },
   plugins: [],
